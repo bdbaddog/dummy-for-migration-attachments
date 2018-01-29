@@ -1,0 +1,4 @@
+import datetime
+prog = Program("hello", "main.cpp")
+run = Command(Value(datetime.datetime.now()), prog, "$SOURCE")
+Alias("run", run)
