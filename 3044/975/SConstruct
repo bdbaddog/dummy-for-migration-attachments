@@ -1,0 +1,4 @@
+prog = Program("hello", "main.cpp")
+run = Command(Value("run"), prog[0], prog[0].path)
+Alias("run", run)
+AlwaysBuild(run)
